@@ -31,6 +31,7 @@ public class MyActivity extends Activity implements OnCustomItemClickListener{
         myNorgridView.setAdapter(adapter);
         myNorgridView.setVisibility(View.VISIBLE);
         myGridView.setVisibility(View.GONE);
+
         btnFGGrid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,6 +60,6 @@ public class MyActivity extends Activity implements OnCustomItemClickListener{
 
     @Override
     public void onCustomItemClk(int i) {
-        Toast.makeText(getApplicationContext(),"您点击的是第"+i+1,Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"您点击的是第"+(i+1)+"个",Toast.LENGTH_SHORT).show();
     }
 }
